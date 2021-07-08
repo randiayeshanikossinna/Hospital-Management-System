@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link href="style.css"  rel="stylesheet">
+    <link href="nav-style.css"  rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+   
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Dashboard</a>
+        <a href="find-patients.html">Find Patients</a>
+        <a href="patient-list.html">Patient List</a>
+        <a href="patient-page.html">Patient Page</a>
+        <a href="settings.html" class="active">Settings</a>
+        <a href="login.html">Back</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+    </div>
+
+
+    <div class="main-div">
+        <div class="topic-div">
+            <img src="images/Untitled-1-removebg-preview.png" alt="logo" width="85px"  height="85px">
+            <h1>SELF CARE</h1>
+            <h5>PROVIDING HEALTH SOLUTION</h5>
+       </div>
+    <h1>Settigns Page</h1>
+</div>
+    <div class="footer-div">
+        <p>&copy; 2021. Design and development by Randi</p>
+
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        } 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

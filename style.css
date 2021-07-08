@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.backgroud{
+    background-color: aquamarine;
+    font-size: 20px;
+}
+.topic-div{
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 30px;
+}
+.topic-div h5{
+    text-align: right;
+} 
+
+.topic-div h1{
+    text-align: right;
+
+}
+
+.topic-div img{
+    float: right;
+    margin-right: 5vw;
+}
+
+.mynav{
+    display: inline-flex;
+}
+
+
+.main-div{
+    width: 100%;
+    min-height: 90vh;
+    background-image: url(images/Untitled-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 50px 5px;
+}
+
+.footer-div {
+    min-height: 8vh;
+    padding: 20px;
+    background-color:#003300;
+}
+
+.footer-div p {
+    color: #c8e6c9;
+    text-align: center;
+}
+
+.footer-div p:hover {
+    color: #fff;
+}
+
+/* Login form */
+.form-div{
+    max-width: 470px;
+    margin-left: 10vw;
+    padding: 30px;
+    border: 5px solid  #c8e6c9;
+    background-color:  #00251a;
+    color:  #c8e6c9;
+    border-radius: 10px;
+}
+
+
+.form-div .form-img-div{
+    text-align: center;
+}
+
+
+.form-div input[type="text"], .login-form input[type="password"]{
+    width: 100%;
+}
+
+.form-div select{
+    width: 100%;
+}
+.form-div button {
+    width: 100%;
+}
+
+.large-div{
+    max-width: 670px;
+    margin-left: 10vw;
+    padding: 30px 10px;
+    padding: auto;
+    border: 5px solid  #c8e6c9;
+    background-color:  #00251a;
+    color:  #c8e6c9;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.large-div .img-section{
+    text-align: center;
+}
+
+.large-div .flex-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.large-div .flex-div .box{
+    border: 2px solid  #c8e6c9;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 6px;
+    font-size: 13px;
+    display: relative;
+}
+
+.large-div .flex-div .box p{
+    display: absolute;
+    font-size: 0;
+    height: 12px;
+
+}
+.large-div .flex-div .box:hover img{
+    opacity: 0.9;
+}
+
+.large-div .flex-div .box:hover p{
+    font-size: 15px;
+}
+
+
+.large-div .flex-div .patient-box{
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 6px;
+    font-size: 13px;
+    display: relative;
+    background-color:#c8e6c9;
+    color: #00251a;
+}
+
+.large-div .flex-div .patient-box img{
+    margin-right: 10px;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    .form-div, .large-div{
+        margin: auto;
+    }
+}

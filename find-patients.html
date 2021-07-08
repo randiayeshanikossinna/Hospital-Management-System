@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Patients</title>
+    <link href="style.css"  rel="stylesheet">
+    <link href="nav-style.css"  rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+   
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Dashboard</a>
+        <a href="find-patients.html" class="active">Find Patients</a>
+        <a href="patient-list.html">Patient List</a>
+        <a href="patient-page.html">Patient Page</a>
+        <a href="settings.html">Settings</a>
+        <a href="login.html">Back</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+    </div>
+
+
+    <div class="main-div">
+        <div class="topic-div">
+            <img src="images/Untitled-1-removebg-preview.png" alt="logo" width="85px"  height="85px">
+            <h1>SELF CARE</h1>
+            <h5>PROVIDING HEALTH SOLUTION</h5>
+       </div>
+       
+        <div class="form-div">
+            <div class="form-img-div">
+                <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; "><img src="images/th__1_-removebg-preview (1).png" alt="search"  width="40px" height="40px" style="margin-top: 15px;">Find Patients</h4>
+            </div>
+
+            <!--form section including ward,section,location,department-->
+            <form action="">
+                <label for="patientName">Patients Name</label><br>
+                <input type="text" id="patientName" name="patientName" class="patientsName" placeholder="Patients Name"><br><br>
+            
+                <!--ward-->
+                <label for="ward">Ward</label>
+                <select name="ward" id="ward">
+                    <option value="ward1">Ward 01</option>
+                    <option value="ward2">Ward 02</option>
+                    <option value="ward3">Ward 03</option>
+                    <option value="ward4">Ward 04</option>
+                </select>  <br><br>
+    
+                <!--section-->
+                <label for="section">Section</label>
+                <select name="section" id="section">
+                    <option value="sec1">Section 01</option>
+                    <option value="sec2">Section 02</option>
+                    <option value="sec3">Section 03</option>
+                    <option value="sec4">Section 04</option>
+                </select>  <br><br>
+
+                <!--location-->
+                <label for="location">Location</label>
+                <select name="location" id="location">
+                    <option value="lo01">Location 01</option>
+                    <option value="lo02">Location 02</option>
+                    <option value="lo03">Location 03</option>
+                    <option value="lo04">Location 04</option>
+                </select>  <br><br>
+
+                <!--department-->
+                <label for="department">Department</label>
+                <select name="department" id="department">
+                    <option value="dep01">Department 01</option>
+                    <option value="dep02">Department 02</option>
+                    <option value="dep03">Department 03</option>
+                    <option value="dep04">Department 04</option>
+                </select><br><br>
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button" style="width: 92%;">Find</button>
+                </div>
+
+            </form>
+       </div>
+    </div>
+
+
+    <!-- Footer section -->
+    <div class="footer-div">
+        <p>&copy; 2021. Design and development by Randi</p>
+
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        } 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
