@@ -147,6 +147,39 @@ body{
 }
 
 
+/* Dashboard nav */
+.bar-block {
+height: 100%;
+max-width: 160px;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+    position: fixed !important;
+    position: relative;
+    /* animation: animateleft 0.4s; */
+}
+
+.bar-block a {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    color: #c8e6c9;
+    text-decoration: none;
+}
+
+.bar-block a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+.bar-block a i{
+    margin-right: 6px;
+}
 
 
 @media screen and (max-width: 576px) {

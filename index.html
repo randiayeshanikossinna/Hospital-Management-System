@@ -32,10 +32,12 @@
        </div>
 
         <div class="large-div" >
-            <div class="Dashboard">
-                <!--side menu bar-->
-                <div class="sideNav">
-                    <div class="topnav" id="myTopnav">
+        
+                <div>
+                    <div class="bar-block animate-left" style="display:none" id="mySidebar">
+                        <button class="w3-bar-item w3-button w3-large"
+                        onclick="close_dashboard_Nav()">Close &times;</button>
+                        <img src="images/th-removebg-preview (1).png" alt="loginPic"  width="70px" height="70px" style="margin: auto">
                         <a href="#" class="active"><i class="fas fa-search"></i>Find Patients</a>
                         <a href="#"><i class="far fa-calendar-check"></i>Appointments</a>
                         <a href="#"><i class="fas fa-envelope"></i>Messeges</a>
@@ -43,21 +45,23 @@
                         <a href="#"><i class="fas fa-folder-open"></i>Directory</a>
                         <a href="#"><i class="fas fa-file-alt"></i>Documents</a>
                         <a href="#"><i class="fas fa-sign-out-alt"></i>Sign out</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
                     </div>
-                    <div class="imgSection" style="text-align:center;">
+                      
+                      <div id="main">
+                        <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="open_dashboard_Nav()">&#9776;</button>
+
+                      <div class="imgSection" style="text-align:center;">
+
                         <h5 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Dashboard</h5>
-                        <img src="images/th-removebg-preview (1).png" alt="loginPic"  width="70px" height="70px" style="margin-top: 15px;">
                     <div class="content">
-                        <img src="images/Hospital-Acquired-Infections.png" width="300px" height="200px" alt="point chart">
-                        <img src="images/2015HACExhibit4.jpg" alt="pie chart" width="300px" height="200px">
-                        <img src="images/db43_fig_6.png" alt="highchart"width="300px" height="200px"  >
-                        <img src="images/Reported-Adverse-Event-graph_10-24-13.jpg" alt="3d chart"width="300px" height="200px"  >
-               </div>
-           </div>
-                 
-                   </div>
+                        <img src="images/Hospital-Acquired-Infections.png" width="45%" height="auto" alt="point chart">
+                        <img src="images/2015HACExhibit4.jpg" alt="pie chart" width="45%" height="auto">
+                        <img src="images/db43_fig_6.png" alt="highchart" width="45%" height="auto" >
+                        <img src="images/Reported-Adverse-Event-graph_10-24-13.jpg" alt="3d chart" width="45%" height="auto" >
+                    </div>
                 </div>
+                </div>
+
        
         
 </div>
@@ -68,6 +72,18 @@
 
     </div>
     <script>
+        function open_dashboard_Nav() {
+          document.getElementById("main").style.marginLeft = "160px";
+          document.getElementById("mySidebar").style.width = "160px";
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("openNav").style.display = 'none';
+        }
+        function close_dashboard_Nav() {
+          document.getElementById("main").style.marginLeft = "0%";
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("openNav").style.display = "inline-block";
+        }
+
         function myFunction() {
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
