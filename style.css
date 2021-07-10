@@ -146,7 +146,6 @@ body{
     margin-right: 10px;
 }
 
-
 /* Dashboard nav */
 .bar-block {
 height: 100%;
@@ -158,8 +157,8 @@ max-width: 160px;
     white-space: normal;
     float: none;
     outline: 0;
-    position: fixed !important;
-    position: relative;
+    /* position: fixed !important; 
+     position: relative; */
     /* animation: animateleft 0.4s; */
 }
 

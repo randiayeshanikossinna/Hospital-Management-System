@@ -1,98 +1,89 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link href="style.css"  rel="stylesheet">
-    <link href="nav-style.css"  rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Login</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="nav-style.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
 </head>
 <body>
-   
-    <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Dashboard</a>
-        <a href="find-patients.html">Find Patients</a>
-        <a href="patient-list.html">Patient List</a>
-        <a href="patient-page.html">Patient Page</a>
-        <a href="settings.html">Settings</a>
-        <a href="#">Sign out</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
-    </div>
 
-
-    <div class="main-div">
-        <div class="topic-div">
-            <img src="images/Untitled-1-removebg-preview.png" alt="logo" width="85px"  height="85px">
-            <h1>SELF CARE</h1>
-            <h5>PROVIDING HEALTH SOLUTION</h5>
-       </div>
-
-        <div class="large-div" >
-        
-                <div>
-                    <div class="bar-block animate-left" style="display:none" id="mySidebar">
-                        <button class="w3-bar-item w3-button w3-large"
-                        onclick="close_dashboard_Nav()">Close &times;</button>
-                        <img src="images/th-removebg-preview (1).png" alt="loginPic"  width="70px" height="70px" style="margin: auto">
-                        <a href="#" class="active"><i class="fas fa-search"></i>Find Patients</a>
-                        <a href="#"><i class="far fa-calendar-check"></i>Appointments</a>
-                        <a href="#"><i class="fas fa-envelope"></i>Messeges</a>
-                        <a href="#"><i class="fas fa-calendar-week"></i>Calender</a>
-                        <a href="#"><i class="fas fa-folder-open"></i>Directory</a>
-                        <a href="#"><i class="fas fa-file-alt"></i>Documents</a>
-                        <a href="#"><i class="fas fa-sign-out-alt"></i>Sign out</a>
-                    </div>
-                      
-                      <div id="main">
-                        <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="open_dashboard_Nav()">&#9776;</button>
-
-                      <div class="imgSection" style="text-align:center;">
-
-                        <h5 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Dashboard</h5>
-                    <div class="content">
-                        <img src="images/Hospital-Acquired-Infections.png" width="45%" height="auto" alt="point chart">
-                        <img src="images/2015HACExhibit4.jpg" alt="pie chart" width="45%" height="auto">
-                        <img src="images/db43_fig_6.png" alt="highchart" width="45%" height="auto" >
-                        <img src="images/Reported-Adverse-Event-graph_10-24-13.jpg" alt="3d chart" width="45%" height="auto" >
-                    </div>
-                </div>
-                </div>
-
-       
-        
+<!--Navigation -->
+<div class="topnav" id="myTopnav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="find-patients.html">Find Patients</a>
+    <a href="patient-list.html">Patient List</a>
+    <a href="patient-page.html">Patient Page</a>
+    <a href="settings.html">Settings</a>
+    <a href="#">Sign out</a>
+    <a class="icon" href="javascript:void(0);" onclick="myFunction()">☰</a>
 </div>
-    </div>
-        
-    <div class="footer-div">
-        <p>&copy; 2021. Design and development by Randi</p>
 
+<!--Main Topic and logo -->
+<div class="main-div">
+    <div class="topic-div">
+        <img alt="logo" height="85px" src="images/Untitled-1-removebg-preview.png" width="85px">
+        <h1>SELF CARE</h1>
+        <h5>PROVIDING HEALTH SOLUTION</h5>
     </div>
-    <script>
-        function open_dashboard_Nav() {
-          document.getElementById("main").style.marginLeft = "160px";
-          document.getElementById("mySidebar").style.width = "160px";
-          document.getElementById("mySidebar").style.display = "block";
-          document.getElementById("openNav").style.display = 'none';
-        }
-        function close_dashboard_Nav() {
-          document.getElementById("main").style.marginLeft = "0%";
-          document.getElementById("mySidebar").style.display = "none";
-          document.getElementById("openNav").style.display = "inline-block";
-        }
 
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        } 
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Login form section-->
+    <div class="form-div">
+        <div class="form-img-div">
+            <img alt="loginPic" height="100px" src="images/th-removebg-preview (1).png" style="margin-top: 15px;"
+                 width="100px">
+            <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">
+                Welcome</h1>
+        </div>
+        <form action="">
+            <div class="input-userName">
+                <div class="i">
+                    <i class="fas fa-user"></i>
+                </div>
+                <label for="username">User Name:</label><br>
+                <input class="inputItems" id="username" name="username" type="text"><br><br>
+            </div>
+
+            <div class="input-password">
+                <div class="i">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <label for="password">Password:</label><br>
+                <input class="inputItems" id="password" name="password" type="password"><br><br>
+                <input type="checkbox">
+                <label for="rememberMe">Remember Me</label>
+                <a href="#" id="rememberMe">Forgot Password?</a> <br><br>
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-success" style="width: 92%;" type="button">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+<!--footer section-->    
+</div>
+<div class="footer-div">
+    <p>&copy; 2021. Design and development by Randi</p>
+
+</div>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
